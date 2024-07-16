@@ -1,0 +1,28 @@
+body {}
+
+.container {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 0 0 1;
+    display: flex;
+}
+
+.square {
+    width: 50px;
+    flex-basis: auto;
+    border: 1px solid black;
+}
+
+.green {
+    background-color: greenyellow;
+    opacity: 100%;
+}
+
+#change_squares {
+    margin: 10px;
+}
