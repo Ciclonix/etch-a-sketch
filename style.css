@@ -1,28 +1,102 @@
-body {}
+body {
+    background-color: #ededed;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* --- Settings bar --- */
+
+.settings {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.eraser,
+.random_color,
+.shading {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 4px black solid;
+}
+
+.change_squares {
+    vertical-align: text-top;
+}
+
+#color_pick {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+}
+
+#color_pick::-webkit-color-swatch {
+    border-radius: 50%;
+}
+  
+#color_pick::-webkit-color-swatch-wrapper {
+    padding: 0px;
+}
+
+.slider {
+    padding: 0;
+}
+
+.sides {
+    text-align: center;
+}
+
+.red_border {
+    border: 4px red solid;
+}
+
+.green_border {
+    border: 4px green solid;
+}
+
+/* --- Grid --- */
 
 .container {
     height: 600px;
     width: 600px;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
+    border: 4px black solid;
+    border-radius: 4px;
 }
 
 .row {
-    flex: 0 0 1;
+    flex: 0 0 auto;
     display: flex;
 }
 
 .square {
-    width: 50px;
     flex-basis: auto;
-    border: 1px solid black;
-}
-
-.green {
-    background-color: greenyellow;
-    opacity: 100%;
-}
-
-#change_squares {
-    margin: 10px;
+    background-color: white;
 }

@@ -8,7 +8,21 @@
         <script defer src="./script.js"></script>
     </head>
     <body>
-        <button id="change_squares">Change Number Of Squares</button>
-        <div class="container"></div>
+        <div class="title">Etch-A-Sketch</div>
+        <div class="content">
+            <div class="settings">
+                <div class="color black_border">
+                    <input type="color" id="color_pick" value="#ff0000">
+                </div>
+                <div class="change_squares black_border">
+                    <input type="range" min="1" max="100" value="16" class="slider">
+                    <div class="sides">16 x 16</div>
+                </div>
+                <div class="eraser red_border">ERASER</div>
+                <div class="random_color red_border">RANDOM COLOR</div>
+                <div class="shading red_border">SHADING</div>
+            </div>
+            <div class="container"></div>
+        </div>
     </body>
 </html>
